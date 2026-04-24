@@ -13,4 +13,16 @@ export default defineConfig([
             eqeqeq: ['error', 'always'],
         },
     },
+
+    {
+        "overrides": [
+            {
+                "files": ["tests/**/*"],
+                "plugins": ["jest"],
+                "env": {
+                    "jest/globals": true
+                }
+            }
+        ]
+    }
 ])
